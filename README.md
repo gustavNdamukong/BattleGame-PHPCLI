@@ -43,6 +43,7 @@ being	declared.
  * If	a	fighter’s	health	drops	to	0	they	lose	the	fight.	If	the	fight	has	not	finished	after	30	rounds	a	draw	is	declared.
 
 * Every	time	a	defender	is	attacked	there	is	a	small	chance	the	attacker	misses.	The	chance	of	an	attack	missing	is	denoted	by	the	defenders	luck	property	(0.3	=	30%).	
+* When	a	battle	ends,	the	program	should	declare	the	winner	by	name,	or	announce	the	result	as	a	draw.
 
 # Special	Skills
 
@@ -53,5 +54,3 @@ Each	type	of	battler	has	a	special	skill:
    * With	each	attack	there	is	a 2%	chance	of	stunning	the	enemy,	causing	them	to	miss	their	next	attack.
  * Grappler –	Counter	Attack
    * When	a	grappler	evades	an	attack	their	opponent	is	dealt	10	damage.
-   
-* When	a	battle	ends,	the	program	should	declare	the	winner	by	name,	or	announce	the	result	as	a	draw.
