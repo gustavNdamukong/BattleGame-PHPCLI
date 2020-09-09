@@ -28,27 +28,30 @@ Luck | Affects	ability	to	dodge	an	attack | Decimal,	0	to	1
 The	program	runs	on	the	command	line.		When	the	program	starts,	it	asks	for	the	names	of	two	
 combatants	and	assigns	them	a	type	of	battler	at	random.		The	properties	are	then	determined	
 randomly	for	each	fighter	as	above.	
-The	program	runs	the	battle	simulation	and	outputs	a	line	of	text	each	turn	explaining	what	
+-The	program	runs	the	battle	simulation	and	outputs	a	line	of	text	each	turn	explaining	what	
 happened	that	round	until	either	one	runs	out	of	health	or	30	turns	pass	without	a	winner	
 being	declared.
 
-The	speed	of	the	combatants	determines	which	one	will	attack	first,	if	two	combatants	have	the	
-same	speed	the	one	with	the	lower	defense	should	go	first	and	if	those	are	the	same	combatant	
-one	should	go	first.	The	combatants	then	attack	one	at	a	time	until	the	end	of	the	battle.	The	
-damage	dealt	by	the	attacker	is	determined	with	the	following	calculation:
-Damage	=	Attacker	strength	–	Defenders	Defense
-The	damage	is	subtracted	from	the	defenders	health.	If	a	fighter’s	health	drops	to	0	they	lose	
-the	fight.	If	the	fight	has	not	finished	after	30	rounds	a	draw	is	declared.
-Every	time	a	defender	is	attacked	there	is	a	small	chance	the	attacker	misses.	The	chance	of	an	
-attack	missing	is	denoted	by	the	defenders	luck	property	(0.3	=	30%).	
-Special	Skills
+-The	speed	of	the	combatants	determines	which	one	will	attack	first,	
+ -if	two	combatants	have	the	same	speed	the	one	with	the	lower	defense	should	go	first	and	
+ -if	those	are	the	same then combatant	one	should	go	first.	
+ 
+-The	combatants	then	attack	one	at	a	time	until	the	end	of	the	battle.	
+ -The	damage	dealt	by	the	attacker	is	determined	with	the	following	calculation:
+  -Damage	=	Attacker	strength	–	Defenders	Defense
+   -The	damage	is	subtracted	from	the	defenders	health.	
+ -If	a	fighter’s	health	drops	to	0	they	lose	the	fight.	If	the	fight	has	not	finished	after	30	rounds	a	draw	is	declared.
+
+-Every	time	a	defender	is	attacked	there	is	a	small	chance	the	attacker	misses.	The	chance	of	an	attack	missing	is	denoted	by	the	defenders	luck	property	(0.3	=	30%).	
+
+# Special	Skills
+
 Each	type	of	battler	has	a	special	skill:
-Swordsman –	Lucky	Strike
-• With	each	attack	there	is	a	5%	chance	of	their	strength	doubling	for	that	attack.
-Brute –	Stunning	blow
-• With	each	attack	there	is	a 2%	chance	of	stunning	the	enemy,	causing	them	to	miss	their	
-next	attack.
-Grappler –	Counter	Attack
-• When	a	grappler	evades	an	attack	their	opponent	is	dealt	10	damage.
-When	a	battle	ends,	the	program	should	declare	the	winner	by	name,	or	announce	the	result	as	
-a	draw.
+ -Swordsman –	Lucky	Strike
+   -With	each	attack	there	is	a	5%	chance	of	their	strength	doubling	for	that	attack.
+ -Brute –	Stunning	blow
+   -With	each	attack	there	is	a 2%	chance	of	stunning	the	enemy,	causing	them	to	miss	their	next	attack.
+ -Grappler –	Counter	Attack
+   -When	a	grappler	evades	an	attack	their	opponent	is	dealt	10	damage.
+   
+-When	a	battle	ends,	the	program	should	declare	the	winner	by	name,	or	announce	the	result	as	a	draw.
