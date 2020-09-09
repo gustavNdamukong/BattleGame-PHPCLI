@@ -32,26 +32,26 @@ randomly	for	each	fighter	as	above.
 happened	that	round	until	either	one	runs	out	of	health	or	30	turns	pass	without	a	winner	
 being	declared.
 
--The	speed	of	the	combatants	determines	which	one	will	attack	first,	
- -if	two	combatants	have	the	same	speed	the	one	with	the	lower	defense	should	go	first	and	
- -if	those	are	the	same then combatant	one	should	go	first.	
+*The	speed	of	the	combatants	determines	which	one	will	attack	first,	
+ *if	two	combatants	have	the	same	speed	the	one	with	the	lower	defense	should	go	first	and	
+ *if	those	are	the	same then combatant	one	should	go	first.	
  
--The	combatants	then	attack	one	at	a	time	until	the	end	of	the	battle.	
- -The	damage	dealt	by	the	attacker	is	determined	with	the	following	calculation:
-  -Damage	=	Attacker	strength	–	Defenders	Defense
-   -The	damage	is	subtracted	from	the	defenders	health.	
- -If	a	fighter’s	health	drops	to	0	they	lose	the	fight.	If	the	fight	has	not	finished	after	30	rounds	a	draw	is	declared.
+*The	combatants	then	attack	one	at	a	time	until	the	end	of	the	battle.	
+ *The	damage	dealt	by	the	attacker	is	determined	with	the	following	calculation:
+  *Damage	=	Attacker	strength	–	Defenders	Defense
+   *The	damage	is	subtracted	from	the	defenders	health.	
+ *If	a	fighter’s	health	drops	to	0	they	lose	the	fight.	If	the	fight	has	not	finished	after	30	rounds	a	draw	is	declared.
 
--Every	time	a	defender	is	attacked	there	is	a	small	chance	the	attacker	misses.	The	chance	of	an	attack	missing	is	denoted	by	the	defenders	luck	property	(0.3	=	30%).	
+*Every	time	a	defender	is	attacked	there	is	a	small	chance	the	attacker	misses.	The	chance	of	an	attack	missing	is	denoted	by	the	defenders	luck	property	(0.3	=	30%).	
 
 # Special	Skills
 
 Each	type	of	battler	has	a	special	skill:
- -Swordsman –	Lucky	Strike
-   -With	each	attack	there	is	a	5%	chance	of	their	strength	doubling	for	that	attack.
- -Brute –	Stunning	blow
-   -With	each	attack	there	is	a 2%	chance	of	stunning	the	enemy,	causing	them	to	miss	their	next	attack.
- -Grappler –	Counter	Attack
-   -When	a	grappler	evades	an	attack	their	opponent	is	dealt	10	damage.
+ *Swordsman –	Lucky	Strike
+   *With	each	attack	there	is	a	5%	chance	of	their	strength	doubling	for	that	attack.
+ *Brute –	Stunning	blow
+   *With	each	attack	there	is	a 2%	chance	of	stunning	the	enemy,	causing	them	to	miss	their	next	attack.
+ *Grappler –	Counter	Attack
+   *When	a	grappler	evades	an	attack	their	opponent	is	dealt	10	damage.
    
--When	a	battle	ends,	the	program	should	declare	the	winner	by	name,	or	announce	the	result	as	a	draw.
+*When	a	battle	ends,	the	program	should	declare	the	winner	by	name,	or	announce	the	result	as	a	draw.
