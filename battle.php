@@ -19,6 +19,11 @@ class setupGame
 	protected $winner = '';
 	public $numTurns = 0;
 	public $endGame = false;
+	protected $playerNames = [
+		'Swordsman',
+		'Brute',
+		'Grappler'
+	];
 
 	function checkPlayer($player)
 	{
@@ -39,6 +44,13 @@ class setupGame
 	function setPlayer2($player2)
 	{
 		$this->player2 = $player2;
+	}
+
+	public function showPlayerNames()
+	{
+		$nameString = implode(', ', $this->playerNames);
+
+		return $nameString;
 	}
 
 
@@ -521,7 +533,7 @@ if ($setup->checkPlayer($name1))
 }
 else
 {
-	echo $name1." does not exist!";
+	echo "The player $name1 does not exist! It must be one of the following: ".$setup->showPlayerNames().' ';
 	exit();
 }
 
@@ -531,7 +543,7 @@ if ($setup->checkPlayer($name2))
 }
 else
 {
-	echo $name2." does not exist!";
+	echo "The player $name2 does not exist! It must be one of the following: ".$setup->showPlayerNames().' ';
 	exit();
 }
 
