@@ -2,7 +2,7 @@
 A PHP command line application that simulates a battle between two combatants
 
 # Combatant	Types And Properties
-There	are	3	types	of	combatant:	swordsman,	brute	and	grappler.	Each	type	has	strengths	and	
+There	are	3	types	of	combatant:	Swordsman,	Brute	and	Grappler.	Each	type	has	strengths	and	
 weaknesses.	At	the	start	of	a	battle,	when	combatants	are	created,	every	property	must	be	
 randomly	determined	between	the	maximum	and	minimum	values	allowed	for	that	type.
 
@@ -37,10 +37,10 @@ being	declared.
  * if	those	are	the	same then combatant	one	should	go	first.	
  
 * The	combatants	then	attack	one	at	a	time	until	the	end	of	the	battle.	
- * The	damage	dealt	by	the	attacker	is	determined	with	the	following	calculation:
-  * Damage	=	Attacker	strength	–	Defenders	Defense
-   * The	damage	is	subtracted	from	the	defenders	health.	
- * If	a	fighter’s	health	drops	to	0	they	lose	the	fight.	If	the	fight	has	not	finished	after	30	rounds	a	draw	is	declared.
+* The	damage	dealt	by	the	attacker	is	determined	with	the	following	calculation:
+    * Damage	=	Attacker	strength	–	Defenders	Defense
+    * The	damage	is	subtracted	from	the	defenders	health.	
+* If	a	fighter’s	health	drops	to	0	they	lose	the	fight.	If	the	fight	has	not	finished	after	30	rounds	a	draw	is	declared.
 
 * Every	time	a	defender	is	attacked	there	is	a	small	chance	the	attacker	misses.	The	chance	of	an	attack	missing	is	denoted	by	the	defenders	luck	property	(0.3	=	30%).	
 * When	a	battle	ends,	the	program	should	declare	the	winner	by	name,	or	announce	the	result	as	a	draw.
